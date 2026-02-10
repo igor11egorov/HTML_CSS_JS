@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.block-parent {
+  width: 500px;
+  height: 300px;
+  border: 1px solid;
+  position: relative;
+}
+
+.box {
+  width: 150px;
+  height: 100px;
+  border: 1px solid;
+  background: yellow;
+  position: absolute;
+}
+
+.child1 {
+  top: 20px;
+  left: 20px;
+}
+
+.child2 {
+  top: 80px;
+  right: 20px;
+}
+
+.child3 {
+  bottom: 20px;
+  left: 150px;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+  position: absolute;
+}
+
+.square1 {
+  top: 120px;
+  left: 120px;
+  background: white;
+  z-index: 10;
+}
+
+.square2 {
+  top: 40px;
+  left: 40px;
+  background: red;
+  z-index: 30;
+}
+
+.square3 {
+  top: 80px;
+  left: 80px;
+  background: green;
+  z-index: 20;
+}

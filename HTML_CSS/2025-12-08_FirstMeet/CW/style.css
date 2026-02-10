@@ -1,0 +1,19 @@
+.item1 img{
+    width: 200px;
+    height: 150px;
+}
+
+.item1 p{
+    color: white;
+    background: red;
+}
+
+.item2 img{
+    width: 400px;
+    height: 200px;
+}
+
+.item2 p{
+    color: green;
+    background: black;
+}

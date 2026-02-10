@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 500px;
+  height: 250px;
+  margin: 50px;
+  border: 1px solid;
+
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.end {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.square {
+  width: 45px;
+  height: 45px;
+  border: 1px solid;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}

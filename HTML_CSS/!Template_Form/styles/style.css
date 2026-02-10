@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+body {
+  width: 300px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin: 20px auto;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 2px;
+}
+
+.field input {
+  background: #f0f0f0;
+  border: 1px solid;
+  padding: 5px 10px;
+}
+
+.field label {
+  font-size: 10px;
+  padding-left: 4px;
+}
+
+.btn {
+  padding: 5px;
+  width: 135px;
+  background: transparent;
+  border: 1px solid;
+}

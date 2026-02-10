@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p{
+  white-space: nowrap;
+}
+
+
+.upperheader{
+  padding: 15px 135px;
+  background: #F7EBE5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upperheader__right {
+  display: flex;
+}
+
+.upperheader__right div {
+  display: flex;
+  gap: 5px;
+}
+

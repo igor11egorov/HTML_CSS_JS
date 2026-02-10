@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tickets {
+    background: rgba(251, 219, 60, 1);
+    height: 100vh;
+    padding: 200px 0;
+}
+
+.ticket {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1242px;
+    height: 220px;
+    background: white;
+    margin: 0 auto;
+    position: relative;
+}
+
+.ticket::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 15px;
+    height: 220px;
+    background: url('../images/before.svg') no-repeat center center / contain;
+}
+
+.ticket::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -15px;
+    width: 15px;
+    height: 220px;
+    background: url('../images/after.svg') no-repeat center center / contain;
+}
+
+.ticket__left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ticket__left h3 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 90px;
+    width: 270px;
+    height: 150px;
+    align-content: center;
+    text-align: center;
+    position: relative;
+    border-right: 1px solid rgba(234, 234, 234, 1);
+}
+
+.ticket__left h3::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(234, 234, 234, 1);
+    border-radius: 50%;
+}
+
+.ticket__left h3::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(234, 234, 234, 1);
+    border-radius: 50%;
+}
+
+.ticket__center {
+    padding: 0 60px;
+    opacity: 0.4
+}
+
+.ticket__center div:first-child {
+    font-size: 25px;
+    line-height: 27px;
+    font-weight: 500;
+    color: rgba(33, 37, 41, 1);
+    margin-bottom: 6px;
+}
+
+.ticket__center div:nth-child(2){
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: bold;
+    color: rgba(33, 37, 41, 1);
+}
+.ticket__center h4:last-child {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    color: rgba(143, 115, 240, 1);
+    margin-top: 23px;
+}
+.ticket__right {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    background: rgba(204, 204, 204, 1);
+    padding: 0 82px;
+    color: white;
+}
+
+.speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.speaker {
+    width: 380px;
+    height: 600px;
+    background: teal;
+}
+
+.speaker:nth-child(2) {
+    margin-top: 75px;
+}
+
+.speaker:nth-child(3) {
+    margin-top: 150px;
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Tasks</h2>
+
+        <div class="task">
+            <h3>Task 1</h3>
+            <p>
+                <!-- текст задания 1 -->
+                Задание 1
+                Создайте HTML-форму с двумя полями ввода: для логина и пароля, а также кнопкой "Войти".
+                Используя JavaScript и DOM, напишите скрипт, который будет проверять, совпадают ли введенные значения с
+                заранее заданными значениями логина и пароля (их нужно самому придумать и заранее указать в скрипте).
+                Если значения совпадают, выведите сообщение об успешной аутентификации, в противном случае - сообщение
+                об ошибке.
+            </p>
+
+            <form id="form">
+                <div class="field">
+                    <label for="login">Логин</label>
+                    <input type="text" id="login" placeholder="admin" />
+                </div>
+                <div class="field">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" placeholder="12345" />
+                </div>
+                <button class="btn" type="submit">Войти</button>
+                <p id="message"></p>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

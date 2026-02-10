@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.block {
+  width: 80%;
+  max-width: 1200px;
+  min-height: 400px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.first {
+  background: blue;
+}
+
+.second {
+  background: green;
+}
+
+.third {
+  background: red;
+}
+
+.second img {
+  width: 200px;
+  height: 300px;
+  margin: 20px;
+}
+
+.third img {
+  width: 100px;
+}
+
+.view {
+  width: 75vw;
+  height: 50vh;
+  background-color: aqua;
+
+}

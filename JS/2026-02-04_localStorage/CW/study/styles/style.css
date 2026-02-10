@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+[data-theme='light'] > body,
+[data-theme='light'] .btn {
+  background: white;
+  color: black;
+}
+
+[data-theme='dark'] > body,
+[data-theme='dark'] .btn {
+  background: black;
+  color: white;
+}

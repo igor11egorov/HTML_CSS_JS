@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Tasks</h2>
+
+        <div class="task">
+            <h3>Task 1</h3>
+            <p>
+                <!-- текст задания 1 -->
+                По клику на сабмит выводить данные в объекте в консоль
+            </p>
+
+            <form id="form">
+                <h3>Отправить данные</h3>
+                <div class="wrap">
+                    <div class="field">
+                        <label for="name">Имя пользователя</label>
+                        <input type="text" id="name" />
+                    </div>
+                    <div class="field">
+                        <label for="email">Почта</label>
+                        <input type="text" id="email" />
+                    </div>
+                    <div class="field">
+                        <label for="phone">Телефон</label>
+                        <input type="text" id="phone" />
+                    </div>
+                    <div class="field">
+                        <label for="company">Компания</label>
+                        <input type="text" id="company" />
+                    </div>
+                </div>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="task">
+            <h3>Task 2</h3>
+            <p>
+                <!-- текст задания 2 -->
+                Создать 2 инпута, по клику на кнопку отправлять данные в консоль (без
+                формы)
+            </p>
+            <div class="wrap-form">
+                <div class="field">
+                    <label for="phone2">Телефон</label>
+                    <input type="text" id="phone2" />
+                </div>
+                <div class="field">
+                    <label for="company2">Компания</label>
+                    <input type="text" id="company2" />
+                </div>
+
+                <button class="btn btn-task2">Submit</button>
+            </div>
+        </div>
+
+        <div class="task">
+            <h3>Task 3</h3>
+            <p>
+                <!-- текст задания -->
+                Создать HTML-форму, которая включает в себя: Поля ввода: фамилии имени
+                email пароля даты рождения Кнопки отправки и очистки Чекбокс с текстом
+                “Подписаться на email рассылку” Поле ввода почты должно содержать
+                символ “@”, пароль должен быть длиннее 6 символов, в случае ошибки,
+                выводить текст, содержащий сообщение об ошибке. Если все условия
+                выполнены, очистить поля формы и показать сообщение об успехе.
+                Добавить произвольные поля.
+            </p>
+
+            <form id="form3">
+                <h3>Отправить данные</h3>
+                <div class="wrap">
+                    <div class="field">
+                        <label for="lastname">Фамилия</label>
+                        <input type="text" id="lastname" />
+                    </div>
+                    <div class="field">
+                        <label for="firstname">Имя</label>
+                        <input type="text" id="firstname" />
+                    </div>
+                    <div class="field">
+                        <label for="email">Почта</label>
+                        <input type="text" id="email3" />
+                        <p id="error-email" class="hidden"></p>
+                    </div>
+                    <div class="field">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" />
+                        <p id="error-password" class="hidden"></p>
+                    </div>
+                    <div class="field">
+                        <label for="check">
+                            <input type="checkbox" id="check" />
+                            Согласен на все
+                        </label>
+                        <p id="error-check" class="hidden"></p>
+                    </div>
+                </div>
+                <button class="btn" type="reset" id="btn-reset">Reset</button>
+                <button class="btn" type="submit" id="btn-submit">Submit</button>
+                <p id="message" class="hidden"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

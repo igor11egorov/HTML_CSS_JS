@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.about {
+  background: url('../images/about-bg.png') no-repeat center center / cover;
+}
+
+.about__announcement {
+  display: flex;
+  justify-content: space-between;
+
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22.5px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.about__announcement div:first-child {
+  background: #323232;
+  width: 100%;
+  padding-right: 40px;
+  text-align: right;
+  align-content: center;
+}
+
+.about__announcement div:last-child {
+  border: 1px solid #ff3c00;
+  background: #ff3c00;
+  white-space: nowrap;
+  padding: 16px 41px;
+}
+
+.about__main-container {
+  display: flex;
+  /* align-items: flex-start; */
+  flex-direction: column;
+  gap: 50px;
+  padding: 232px 324px;
+  position: relative;
+}
+
+.about__header {
+  color: #212529;
+  font-weight: 900;
+  font-style: Black;
+  font-size: 77px;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+
+.about__сontainer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin-right: 468px;
+
+  color: #212529;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 33.6px;
+}
+
+.about__logo {
+  position: absolute;
+  bottom: 263px;
+  right: 360px;
+}
+
+.btn {
+  align-self: flex-start;
+  background: #323232;
+  border: 1px solid #323232;
+  padding: 22px 36px;
+
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 31.2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.banner {
+  background: url('../images/banner-bg.png') no-repeat center center / cover;
+  display: flex;
+  gap: 258px;
+  margin: 0 324px;
+  padding: 48px 80px;
+  border-radius: 16px;
+  align-items: center;
+  transform: translateY(-50%);
+}
+
+.banner__header {
+  color: #ffffff;
+  font-family: Inter;
+  font-weight: 900;
+  font-size: 47px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.btn-banner {
+  align-self: center;
+  font-size: 23px;
+  line-height: 36px;
+  letter-spacing: 1px;
+}
+.our-speakers {
+}
+.our-speakers__header {
+  color: #212529;
+  font-weight: 900;
+  font-size: 59px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+.speakers {
+  background: #EAEAEA;
+
+}

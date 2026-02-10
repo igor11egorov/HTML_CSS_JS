@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  border-bottom: 2px solid rgb(116, 14, 14);
+}
+
+form {
+  padding: 10px;
+  width: 350px;
+  border: 1px;
+}
+
+.field label {
+  color: #888;
+  font-size: 14px;
+
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  gap: 2px;
+}
+
+.field input {
+  padding: 5px 10px;
+  background: #ededed;
+  border: 0.3px solid #888;
+  border-radius: 2px;
+}
+
+span {
+  color: rgb(116, 14, 14);
+}
+
+.field span {
+  color: red;
+}
+
+.check-field label {
+  color: #888;
+  font-size: 12px;
+}
+
+.check-field {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px;
+  margin-top: 20px;
+  color: white;
+  background: #b40404;
+  font-size: 12px;
+  border: none;
+}

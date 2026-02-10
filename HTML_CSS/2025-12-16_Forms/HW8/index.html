@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <form class="form">
+                <fieldset class="set-name">
+                    <legend>Имя</legend>
+                    <div class="field">
+                        <input type="text" placeholder="Фамилия">
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Имя">
+                    </div>
+                </fieldset>
+                <div class="wrap-gender-mailing">
+                    <fieldset class="set-gender">
+                        <legend>Пол</legend>
+                        <div class="field">
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Мужской</label>
+                        </div>
+                        <div class="field">
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Женский</label>
+                        </div>
+                        <div class="field">
+                            <input type="radio" id="dont-say" name="gender">
+                            <label for="dont-say">Не хочу говорить</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="set-mailing">
+                        <legend>Получать рассылку по</legend>
+                        <div class="field">
+                            <input type="checkbox" id="email">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="field">
+                            <input type="checkbox" id="sms">
+                            <label for="sms">SMS</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>

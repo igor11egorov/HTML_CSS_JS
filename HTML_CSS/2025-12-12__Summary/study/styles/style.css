@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  max-width: 233px;
+  padding: 16px;
+  border: 1px solid;
+  text-align: center;
+}
+
+.img {
+  max-width: 159px;
+}
+
+.description {
+  margin-top: 32px;
+}
+
+.btn {
+  padding: 15px;
+  margin-top: 46px;
+}

@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  background: #3d3d3d;
+  color: #ffffff;
+  padding: 0 8px;
+}
+
+.container {
+  background: #add8e6;
+  padding: 8px;
+}
+
+.description {
+  margin: 16px 0;
+}
+
+.post {
+  background: #00ffff;
+  margin-top: 16px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.post p {
+  margin-top: 8px;
+}

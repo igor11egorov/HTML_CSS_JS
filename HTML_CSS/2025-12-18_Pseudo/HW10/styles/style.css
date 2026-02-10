@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+span {
+  display: none;
+}
+
+.btn {
+  background: rgb(44, 116, 210);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: large;
+  padding: 10px;
+  margin: 40px;
+  border: none;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  color: rgb(44, 116, 210);
+  background: white;
+  border: 2px solid rgb(44, 116, 210);
+  transition: 0.5s ease;
+}
+
+.btn:active span {
+  display: inline;
+}
+
+.btn:active {
+  box-shadow: none;
+  transition: box-shadow 0.8s ease;
+}
