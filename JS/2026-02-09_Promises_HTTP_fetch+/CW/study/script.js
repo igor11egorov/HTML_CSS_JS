@@ -118,7 +118,7 @@ const photos = 'photos'
 const todos = 'todos'
 const users = 'users'
 
-function fetchResource(url) {
+async function fetchResource(url) {
   return fetch(mainUrl + url).then((res) => res.json())
 }
 
