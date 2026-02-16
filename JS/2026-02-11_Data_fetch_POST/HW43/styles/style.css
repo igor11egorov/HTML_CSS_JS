@@ -16,13 +16,27 @@
 }
 
 .task {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   border: 1px solid;
   border-radius: 5px;
   padding: 20px;
   background: white;
 }
 
-p{
-  margin-bottom: 20px;
+.container-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
+.card {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
