@@ -8,26 +8,43 @@
     <title>Document</title>
 </head>
 
+
 <body>
-    <div class="container">
-        <h2>Tasks</h2>
-
-        <div class="task">
-            <h3>Task 1</h3>
-            <p>
-                <!-- текст задания 1 -->
-            </p>
-        </div>
-
-        <div class="task">
-            <h3>Task 2</h3>
-            <p>
-                <!-- текст задания 2 -->
-            </p>
+    <div class="wrap_container">
+        <h2>Список дел</h2>
+        <div class="container" id="container">
+            <form class="form" id="form">
+                <input
+                       type="text"
+                       class="form__input"
+                       id="input"
+                       name="input"
+                       required />
+                <button class="form__button">+</button>
+            </form>
+            <div id="status"></div>
+            <ul id="todo__list">
+                <li>
+                    <label class="checkbox">
+                        <input type="checkbox" checked>
+                        согласен с условиями
+                    </label>
+                </li>
+                <li>
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        AAAсогласен с условиями
+                    </label>
+                </li>
+            </ul>
         </div>
     </div>
 
+
     <script src="./script.js"></script>
 </body>
+
+
+
 
 </html>
