@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@mixin Border {
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+@mixin Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 1fr;
+  align-items: stretch;
+  justify-items: center;
+  gap: 20px;
+}
+
+@mixin Flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.container {
+  background: lightblue;
+  margin: 50px;
+  padding: 20px;
+  @include Border;
+  @include Grid;
+
+  &__item {
+    background: white;
+    width: 100%;
+    padding: 20px;
+    @include Border;
+    @include Flex;
+    p {
+      font-size: 22px;
+
+      &:last-child {
+        color: gray;
+        font-size: 12px;
+      }
+    }
+  }
+}

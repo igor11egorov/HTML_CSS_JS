@@ -1,0 +1,48 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: red;
+}
+
+.about {
+  border: 1px solid white;
+  padding: 10px;
+  width: 800px;
+  margin: 0 auto;
+}
+.about h2 {
+  font-size: 48px;
+}
+.about__container {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px;
+}
+.about__container p {
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+}
+.about__container-elem {
+  width: 600px;
+  height: 200px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__container-elem p {
+  color: black;
+}
+.about__container-elem p:last-child {
+  width: 50%;
+}
+
+.new__elem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*# sourceMappingURL=output.css.map */

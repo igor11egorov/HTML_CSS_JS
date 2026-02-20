@@ -1,0 +1,12 @@
+{
+  "name": "study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "sass": "sass --watch ./styles/style.scss ./source/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
