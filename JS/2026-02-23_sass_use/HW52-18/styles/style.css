@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid;
+  width: 960px;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    color: darkblue;
+  }
+}
+
+.button {
+  padding: 5px 10px;
+  margin: 50px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: yellow;
+  color: darkblue;
+}
+
+/*# sourceMappingURL=style.css.map */

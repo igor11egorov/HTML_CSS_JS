@@ -1,0 +1,20 @@
+@mixin flex($gap) {
+  display: flex;
+  gap: $gap;
+}
+
+@mixin font($weight, $size) {
+  font-family: 'Roboto', sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: 100%;
+  color: #274c5b;
+}
+
+@mixin fontYT() {
+  font-family: 'Yellowtail', cursive;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  color: #68a47f;
+}

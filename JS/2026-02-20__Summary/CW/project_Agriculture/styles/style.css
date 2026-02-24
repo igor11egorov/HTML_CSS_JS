@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -24,17 +25,43 @@
 }
 .header__action {
   display: flex;
+  gap: 18px;
 }
 .header__action .search {
   display: flex;
+  position: relative;
 }
 .header__action .search input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: #274c5b;
+  padding-left: 30px;
   width: 376px;
+  height: 66px;
   background: #fafafa;
   border-radius: 36px;
   border: none;
 }
+.header__action .search .wrap-img {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%); /* вертикальное центрирование */
+  pointer-events: none; /* чтобы клик шел в input, а не на иконку */
+  display: flex;
+}
 .header__action .cart {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border-radius: 33px;
+  border: 1px solid #e0e0e0;
+  padding-left: 6px;
+  padding-right: 23px;
+}
+.header__action .cart .wrap-img {
   display: flex;
 }
 .header__action .cart span {
@@ -43,6 +70,45 @@
   font-size: 18px;
   line-height: 100%;
   color: #274c5b;
+}
+
+.banner {
+  background-image: url("../images/FD49353B-F611-47BF-829F-8219154240CF.jpg");
+  padding-top: 247px;
+  padding-bottom: 246px;
+  padding-left: 260px;
+}
+.banner__container {
+  max-width: 530px;
+  display: flex;
+  gap: 23px;
+  flex-direction: column;
+}
+.banner__container span {
+  font-family: "Yellowtail", cursive;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+  color: #68a47f;
+}
+.banner__container h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 100%;
+  color: #274c5b;
+}
+.banner__container button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: #274c5b;
+  align-self: flex-start;
+  padding: 28px 39px;
+  border: none;
+  border-radius: 16px;
+  background: #efd372;
 }
 
 /*# sourceMappingURL=style.css.map */
