@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<button id="openModal">Display form</button>
+<div class="list">
+
+</div>
+
+<div class="modal">
+    <div class="modal__container">
+        <div class="close-btn">
+            <button id="closeModal">close modal</button>
+        </div>
+        <h3>Отправить данные</h3>
+        <div class="modal-content">
+            <div class="image">
+                <img src="images/image%201.png" alt="cat">
+            </div>
+            <div class="form">
+                <form>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email">
+                    </div>
+                    <div>
+                        <label for="company">Company</label>
+                        <input type="text" id="company">
+                    </div>
+                        <button id="submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="module" src="script.js"></script>
+</body>
+</html>
