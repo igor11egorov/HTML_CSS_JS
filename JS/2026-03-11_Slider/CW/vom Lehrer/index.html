@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Простой слайдер-карусель</title>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <h1>Простой слайдер-карусель</h1>
+        <p class="lead">
+          Ниже минимальная карусель, которая показывает принцип работы: есть
+          индекс, есть лента слайдов, и мы сдвигаем ленту на <span>100%</span>
+          за каждый шаг.
+        </p>
+      </header>
+
+      <section class="carousel" data-carousel>
+        <button class="carousel__btn" data-dir="prev" aria-label="Назад">
+          ←
+        </button>
+
+        <div class="carousel__viewport">
+          <div class="carousel__track">
+            <article class="slide">
+              <h2>1. Лента</h2>
+              <p>
+                Все слайды стоят в ряд. Контейнер скрывает лишнее — виден только
+                один.
+              </p>
+              <div class="slide__hint">`display: flex` + `overflow: hidden`</div>
+            </article>
+            <article class="slide">
+              <h2>2. Сдвиг</h2>
+              <p>
+                Сдвигаем ленту на ширину одного слайда. Формула простая:
+                <strong>translateX = -index * 100%</strong>.
+              </p>
+              <div class="slide__hint">`transform: translateX(...)`</div>
+            </article>
+            <article class="slide">
+              <h2>3. Индекс</h2>
+              <p>
+                Кнопки меняют индекс, затем обновляем позицию и подсветку точек.
+              </p>
+              <div class="slide__hint">`index += 1` и `update()`</div>
+            </article>
+          </div>
+        </div>
+
+        <button class="carousel__btn" data-dir="next" aria-label="Вперёд">
+          →
+        </button>
+
+        <div class="carousel__dots" role="tablist" aria-label="Слайды"></div>
+        <p class="carousel__status" aria-live="polite"></p>
+      </section>
+
+      <section class="explain">
+        <h3>Принцип работы</h3>
+        <ul>
+          <li>Есть массив слайдов и текущий индекс.</li>
+          <li>При клике индекс меняется на 1 и ограничивается границами.</li>
+          <li>Лента сдвигается на `-index * 100%` и UI обновляется.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
