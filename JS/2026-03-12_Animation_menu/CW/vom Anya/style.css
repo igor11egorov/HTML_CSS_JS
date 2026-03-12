@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  --sidebar-open-width: min(320px, 85vw);
+  min-height: 100vh;
+  background-color: #ececec;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.header{
+    height: 100px;
+    background: #DADADA;
+    width: 100%;
+}
+
+.menu{
+width: 75px;
+height: 100vh;
+background: #E84343;
+padding:30px 30px 30px 43px ;
+position: fixed;
+top: 0;
+left: 0;
+box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+transition: width 0.32s ease,box-shadow 0.32s ease ;
+overflow: hidden;
+}
+
+
+body.sidebar-open .menu {
+width: var(--sidebar-open-width);
+box-shadow: 8px 0 22px rgba(0, 0, 0, 0.33);
+}
+
+
+
+.close-btn, .open-btn{
+background: none;
+border: none;
+position: absolute;
+top:30px;
+right: 30px;
+cursor: pointer;
+}
+
+
+
+.close-btn{
+opacity: 0;
+transform: translateX(-12px);
+transition: opacity 0.2 ease, transform 0.2s ease;
+}
+body.sidebar-open .close-btn{
+    opacity: 1;
+}
+
+.open-btn{
+   opacity: 1;
+
+}
+body.sidebar-open .open-btn{
+    opacity: 0; 
+    pointer-events: auto;
+}
+
+
+.menu-ul{
+    margin-top: 20px;
+    opacity: 0;
+transition: opacity 0.2 ease, transform 0.2s ease;
+
+}
+
+body.sidebar-open .menu-ul {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+.menu li{
+    list-style: none;
+    margin-top: 20px;
+    color: white;
+
+}
+
+
+
