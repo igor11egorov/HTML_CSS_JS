@@ -13,7 +13,8 @@
 // Output: [1]
 // Explanation: The arrays we are merging are [1] and [].
 // The result of the merge is [1].
-
+{
+}
 // Дан массив целых чисел nums и целое число target. Верните индексы этих двух чисел так, чтобы их сумма равнялась target.
 // Предположим, что для каждого входного значения существует ровно одно решение, и нельзя использовать один и тот же элемент дважды.
 // Ответ можно возвращать в любом порядке.
@@ -40,7 +41,7 @@ function findIndexes(nums, target) {
   })
   return [ind1, ind2]
 }
-const nums = [11, 0 , 2, 4, 7, 11, 15, 2]
+const nums = [11, 0, 2, 4, 7, 11, 15, 2]
 const target = 9
 
 // const nums = [3,2,4]
