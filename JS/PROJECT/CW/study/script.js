@@ -1,1 +1,0 @@
-// https://www.figma.com/design/GSIojMnq02CAKBXVMTfVzh/Front-end-project--Copy-?node-id=0-1&p=f&t=Iz56BqsUGXm8Eoqy-0
