@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
 
-  .left-side {
+  &__left {
     display: flex;
     align-items: center;
     gap: 40px;
@@ -54,7 +54,6 @@
       .btn {
         display: flex;
         align-items: center;
-
         background: #f65858;
         border-radius: 0 8px 8px 0;
         border: none;
@@ -63,7 +62,7 @@
     }
   }
 
-  .right-side {
+  &__right{
     display: flex;
     align-items: center;
     gap: 22px;
@@ -80,6 +79,7 @@
 }
 
 .main {
+  // section1
   .join-meetup {
     display: flex;
     gap: 50px;
@@ -104,8 +104,64 @@
         line-height: 24px;
       }
 
-      .btn-green{
+      .btn-green {
         align-self: flex-start;
+      }
+    }
+  }
+
+  // section2
+  .events-near {
+    .header-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .right-side {
+        display: flex;
+        gap: 8px;
+
+        .header {
+          font-weight: 600;
+          font-size: 28px;
+          line-height: 36px;
+          color: #212121;
+        }
+
+        .search {
+          width: 240px;
+          display: flex;
+
+          .state {
+            border: none;
+            border-radius: 8px 0 0 8px;
+            background: #97cad11f;
+          }
+
+          .state::placeholder {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            padding-left: 12px;
+            color: #00798a;
+          }
+
+          .btn {
+            display: flex;
+            align-items: center;
+            border-radius: 0 8px 8px 0;
+            border: none;
+            // padding: 11px;
+            background: #97cad11f;
+          }
+        }
+      }
+
+      .link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #00798a;
       }
     }
   }
