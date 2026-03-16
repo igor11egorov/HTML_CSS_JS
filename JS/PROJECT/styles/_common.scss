@@ -5,11 +5,26 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.main {
+  max-width: 1196px;
+  margin: 0 auto;
+}
+
 .wrap-img {
   display: flex;
 }
 
-.btn-like-text{
+.btn-like-text {
   border: none;
   background: transparent;
+}
+
+.btn-green {
+  padding: 8px 16px;
+  align-self: center;
+
+  color: #ffffff;
+  background: #00798a;
+  border-radius: 8px;
+  border: none;
 }

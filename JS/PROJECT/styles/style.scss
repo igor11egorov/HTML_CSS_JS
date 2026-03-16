@@ -53,11 +53,12 @@
 
       .btn {
         display: flex;
+        align-items: center;
+
         background: #f65858;
         border-radius: 0 8px 8px 0;
         border: none;
         padding: 11px;
-        align-items: center;
       }
     }
   }
@@ -75,17 +76,37 @@
       align-items: center;
       gap: 4px;
     }
-
-    .btn {
-      padding: 8px 16px;
-      align-self: center;
-
-      color: #ffffff;
-      background: #00798a;
-      border-radius: 8px;
-      border: none;
-    }
   }
 }
 
-// общее
+.main {
+  .join-meetup {
+    display: flex;
+    gap: 50px;
+    padding: 71px 0 122px 0;
+
+    .left-side {
+      width: 51%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      color: #212121;
+
+      .header {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 52px;
+      }
+
+      .text {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .btn-green{
+        align-self: flex-start;
+      }
+    }
+  }
+}
