@@ -12,156 +12,226 @@
     display: flex;
     align-items: center;
     gap: 40px;
-
-    .search-menu {
-      display: flex;
-      font-size: 16px;
-
-      .wrap-search {
-        display: flex;
-        position: relative;
-
-        .search {
-          width: 300px;
-          border: 1px solid #d9d9d9;
-          border-radius: 8px 0 0 8px;
-        }
-
-        .search::placeholder {
-          padding-left: 37px;
-          color: #707070;
-        }
-
-        .wrap-icon {
-          position: absolute;
-          align-self: center;
-          left: 10px;
-        }
-      }
-
-      .state {
-        width: 254px;
-        border: none;
-        border-top: 1px solid #d9d9d9;
-        border-bottom: 1px solid #d9d9d9;
-      }
-
-      .state::placeholder {
-        padding-left: 17px;
-        color: #000000;
-      }
-
-      .btn {
-        display: flex;
-        align-items: center;
-        background: #f65858;
-        border-radius: 0 8px 8px 0;
-        border: none;
-        padding: 11px;
-      }
-    }
   }
 
-  &__right{
+  &__logo-wrap {
+    display: flex;
+  }
+
+  &__search-menu {
+    display: flex;
+    font-size: 16px;
+  }
+
+  &__search-wrap {
+    display: flex;
+    position: relative;
+  }
+
+  &__search-input {
+    width: 300px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px 0 0 8px;
+  }
+
+  &__search-input::placeholder {
+    padding-left: 37px;
+    color: #707070;
+  }
+
+  &__search-icon-wrap {
+    position: absolute;
+    align-self: center;
+    left: 10px;
+    display: flex;
+  }
+
+  &__location-input {
+    width: 254px;
+    border: none;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  &__location-input::placeholder {
+    padding-left: 17px;
+    color: #000000;
+  }
+
+  &__search-btn {
+    display: flex;
+    align-items: center;
+    background: #f65858;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    padding: 11px;
+  }
+
+  &__right {
     display: flex;
     align-items: center;
     gap: 22px;
-
     font-size: 14px;
     line-height: 20px;
+  }
 
-    .language {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
+  &__lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: none;
+    background: transparent;
+  }
+
+  &__lang-icon-wrap {
+    display: flex;
+  }
+
+  &__login-btn {
+    border: none;
+    background: transparent;
+  }
+
+  &__signup-btn {
+    padding: 8px 16px;
+    align-self: center;
+    color: #ffffff;
+    background: #00798a;
+    border-radius: 8px;
+    border: none;
   }
 }
 
 .main {
+  max-width: 1196px;
+  margin: 0 auto;
   // section1
   .join-meetup {
     display: flex;
     gap: 50px;
-    padding: 71px 0 122px 0;
+    padding-top: 71px;
 
-    .left-side {
+    &__left {
       width: 51%;
       display: flex;
       flex-direction: column;
       gap: 24px;
-
       color: #212121;
+    }
 
-      .header {
-        font-weight: 700;
-        font-size: 42px;
-        line-height: 52px;
-      }
+    &__title {
+      @include font(700, 42px, 52px, #212121);
+    }
 
-      .text {
-        font-size: 16px;
-        line-height: 24px;
-      }
+    &__text {
+      @include font(400, 16px, 24px, #212121);
+    }
 
-      .btn-green {
-        align-self: flex-start;
-      }
+    &__btn {
+      align-self: flex-start;
+      padding: 8px 16px;
+      color: #ffffff;
+      background: #00798a;
+      border-radius: 8px;
+      border: none;
+    }
+
+    &__right {
+      display: flex;
     }
   }
 
   // section2
-  .events-near {
-    .header-block {
+  .header-section {
+    padding-top: 100px;
+    padding-bottom: 24px;
+    
+    &__header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
 
-      .right-side {
-        display: flex;
-        gap: 8px;
+    &__title-wrap {
+      align-items: center;
+      display: flex;
+      gap: 20px;
+    }
 
-        .header {
-          font-weight: 600;
-          font-size: 28px;
-          line-height: 36px;
-          color: #212121;
-        }
+    &__title {
+      @include font(600, 28px, 36px, #212121);
+    }
 
-        .search {
-          width: 240px;
-          display: flex;
+    &__location {
+      display: flex;
+    }
 
-          .state {
-            border: none;
-            border-radius: 8px 0 0 8px;
-            background: #97cad11f;
-          }
+    &__location-input {
+      width: 195px;
+      border: none;
+      border-radius: 8px 0 0 8px;
+      background: #97cad11f;
+      padding: 12px 0 8px 12px;
+    }
 
-          .state::placeholder {
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 24px;
-            padding-left: 12px;
-            color: #00798a;
-          }
+    &__location-input::placeholder {
+      @include font(600, 20px, 24px, #00798a);
+    }
 
-          .btn {
-            display: flex;
-            align-items: center;
-            border-radius: 0 8px 8px 0;
-            border: none;
-            // padding: 11px;
-            background: #97cad11f;
-          }
-        }
+    &__location-btn {
+      display: flex;
+      align-items: center;
+      padding: 11px;
+      border-radius: 0 8px 8px 0;
+      border: none;
+      background: #97cad11f;
+    }
+
+    &__link {
+      @include font(500, 16px, 24px, #00798a);
+      text-decoration: none;
+    }
+  }
+
+  // section3
+  .events-near {
+    &__container-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 86px 36px;
+    }
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      &-title {
+        padding-right: 16px;
+        @include font(600, 20px, 24px, #212121);
       }
 
-      .link {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        color: #00798a;
+      &-sphere {
+        @include font(500, 14px, 20px, #707070);
+      }
+
+      &-date-block,
+      &-visitor-block,
+      &-ticket-block {
+        display: flex;
+        gap: 6px;
+      }
+
+      &-wrap-visitor-ticket {
+        display: flex;
+        gap: 16px;
+      }
+
+      &-date,
+      &-visitor,
+      &-ticket {
+        @include font(400, 14px, 20px, #212121);
+        text-transform: uppercase;
       }
     }
   }

@@ -15,70 +15,329 @@
 <body>
     <header class="header">
         <div class="header__left">
-            <div class="wrap-img">
-                <img src="./images/header/logo.svg" alt="logo-meetup">
+            <div class="header__logo-wrap">
+                <img src="./images/header/logo.svg" alt="logo-meetup" class="header__logo">
             </div>
-            <div class="search-menu">
-                <div class="wrap-search">
-                    <input class="search" type="text"
+            <div class="header__search-menu">
+                <div class="header__search-wrap">
+                    <input class="header__search-input" type="text"
                            placeholder="Search events">
-                    <div class="wrap-icon wrap-img">
-                        <img src="./images/header/search-gray.svg" alt="search">
+                    <div class="header__search-icon-wrap">
+                        <img src="./images/header/search-gray.svg" alt="search" class="header__search-icon">
                     </div>
                 </div>
-                <input class="state" type="text" placeholder="Mountain View, CA">
-                <button class="btn">
-                    <img src="./images/header/search-white.svg" alt="search">
+                <input class="header__location-input" type="text" placeholder="Mountain View, CA">
+                <button class="header__search-btn">
+                    <img src="./images/header/search-white.svg" alt="search" class="header__search-btn-icon">
                 </button>
             </div>
         </div>
         <div class="header__right">
-            <button class="btn-like-text language">
-                <div class="wrap-img">
-                    <img src="./images/header/globus.svg" alt="globus">
+            <button class="header__lang-btn">
+                <div class="header__lang-icon-wrap">
+                    <img src="./images/header/globus.svg" alt="globus" class="header__lang-icon">
                 </div>
-                <span>English</span>
+                <span class="header__lang-text">English</span>
             </button>
-            <button class="btn-like-text">Log in</button>
-            <button class="btn-green">Sign up</button>
+            <button class="header__login-btn">Log in</button>
+            <button class="header__signup-btn">Sign up</button>
         </div>
     </header>
 
     <main class="main">
         <section class="join-meetup">
-            <div class="left-side">
-                <h1 class="header">The people platform—Where
+            <div class="join-meetup__left">
+                <h1 class="join-meetup__title">The people platform—Where
                     interests become friendships</h1>
-                <p class="text">Whatever your interest, from hiking and reading to networking and skill sharing,
+                <p class="join-meetup__text">Whatever your interest, from hiking and reading to networking and skill
+                    sharing,
                     there are thousands of people who share it on Meetup. Events are happening
                     every day—sign up to join the fun.</p>
-                <button class="btn-green">Join Meetup</button>
+                <button class="join-meetup__btn">Join Meetup</button>
             </div>
-            <div class="right-side wrap-img">
-                <img src="./images/main/s1_JoinMeetup/tandem.svg" alt="tandem">
+            <div class="join-meetup__right">
+                <img src="./images/main/s1_JoinMeetup/tandem.svg" alt="tandem" class="join-meetup__image">
             </div>
         </section>
-        <section class="events-near">
-            <div class="header-block">
-                <div class="right-side">
-                    <h2 class="header">Events near</h2>
-                    <div class="search">
-                        <input class="state" type="text" placeholder="Mountain View, CA">
-                        <button class="btn">
-                            <img src="./images/main/s2_EventsNear/edit.svg" alt="">
+
+        <section class="header-section">
+            <div class="header-section__header">
+                <div class="header-section__title-wrap">
+                    <h2 class="header-section__title">Events near</h2>
+                    <div class="header-section__location">
+                        <input class="header-section__location-input" type="text" placeholder="Mountain View, CA">
+                        <button class="header-section__location-btn">
+                            <img src="./images/main/s2_EventsNear/edit.svg" alt="" class="header-section__location-icon">
                         </button>
                     </div>
                 </div>
-                <a href="" class="link">See all events</a>
+                <a href="" class="header-section__link">See all events</a>
             </div>
-            <div class="container-cards">
+        </section>
 
+        <section class="events-near">
+            <div class="events-near__container-cards">
+                <!-- 1 -->
+                <div class="events-near__card">
+                    <div class="wrap-img">
+                        <img src="./images/main/s2_EventsNear/event1.png" alt="event1">
+                    </div>
+                    <h3 class="events-near__card-title">Day Trading Idea and
+                        Strategy</h3>
+                    <p class="events-near__card-sphere">Business (5 km)</p>
+                    <div class="events-near__card-date-block">
+                        <div class="wrap-img">
+                            <img src="./images/main/s2_EventsNear/calendar.svg" alt="calendar">
+                        </div>
+                        <time class="events-near__card-date" datetime="Mon, Mar 18 · 7:00 PM PDT">Mon, Mar 18 · 7:00 PM
+                            PDT</time>
+                    </div>
+                    <div class="events-near__card-wrap-visitor-ticket">
+                        <div class="events-near__card-visitor-block">
+                            <div class="wrap-img">
+                                <img src="./images/main/s2_EventsNear/check.svg" alt="check">
+                            </div>
+                            <p class="events-near__card-visitor">1 going</p>
+                        </div>
+                        <div class="events-near__card-ticket-block">
+                            <div class="wrap-img">
+                                <img src="./images/main/s2_EventsNear/ticket.svg" alt="ticket">
+                            </div>
+                            <p class="events-near__card-ticket">Free</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="events-near__card">
+                    <div class="wrap-img">
+                        <img src="./images/main/s2_EventsNear/event2.png" alt="event1">
+                    </div>
+                    <h3 class="events-near__card-title">Let's Talk Networking: JPMorgan Chase in
+                        Palo Alto</h3>
+                    <p class="events-near__card-sphere">Business (25 km)</p>
+                    <div class="events-near__card-date-block">
+                        <div class="wrap-img">
+                            <img src="./images/main/s2_EventsNear/calendar.svg" alt="calendar">
+                        </div>
+                        <time class="events-near__card-date" datetime="Tue, Mar 19 · 5:00 PM PDT">Tue, Mar 19 · 5:00 PM
+                            PDT</time>
+                    </div>
+                    <div class="events-near__card-wrap-visitor-ticket">
+                        <div class="events-near__card-visitor-block">
+                            <div class="wrap-img">
+                                <img src="./images/main/s2_EventsNear/check.svg" alt="check">
+                            </div>
+                            <p class="events-near__card-visitor">41 going</p>
+                        </div>
+                        <div class="events-near__card-ticket-block">
+                            <div class="wrap-img">
+                                <img src="./images/main/s2_EventsNear/ticket.svg" alt="ticket">
+                            </div>
+                            <p class="events-near__card-ticket">Free</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="events-near__card">
+                    <div class="wrap-img">
+                        <img src="./images/main/s2_EventsNear/event3.png" alt="event1">
+                    </div>
+                    <h3 class="events-near__card-title">Tech Talks & Quiz: Next-
+                        Gen Database Solutions
+                        for Emerging Use Cases</h3>
+                    <p class="events-near__card-sphere">Technology</p>
+                    <div class="events-near__card-date-block">
+                        <div class="wrap-img">
+                            <img src="./images/main/s2_EventsNear/calendar.svg" alt="calendar">
+                        </div>
+                        <time class="events-near__card-date" datetime="Wed, Mar 13 · 6:00 PM PDT">Wed, Mar 13 · 6:00 PM
+                            PDT</time>
+                    </div>
+                    <div class="events-near__card-wrap-visitor-ticket">
+                        <div class="events-near__card-visitor-block">
+                            <div class="wrap-img">
+                                <img src="./images/main/s2_EventsNear/check.svg" alt="check">
+                            </div>
+                            <p class="events-near__card-visitor">40 going</p>
+                        </div>
+                        <div class="events-near__card-ticket-block">
+                            <div class="wrap-img">
+                                <img src="./images/main/s2_EventsNear/ticket.svg" alt="ticket">
+                            </div>
+                            <p class="events-near__card-ticket">Free</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="events-near__card">
+                    <div class="wrap-img">
+                        <img src="./images/main/s2_EventsNear/event4.png" alt="event1">
+                    </div>
+                    <h3 class="events-near__card-title">INFORMS San Francisco
+                        Chapter In-Person Event</h3>
+                    <p class="events-near__card-sphere">Health and Wellbeing (50 km)</p>
+                    <div class="events-near__card-date-block">
+                        <div class="wrap-img">
+                            <img src="./images/main/s2_EventsNear/calendar.svg" alt="calendar">
+                        </div>
+                        <time class="events-near__card-date" datetime="Thu, Mar 28 · 5:00 PM PDT">Thu, Mar 28 · 5:00 PM
+                            PDT</time>
+                    </div>
+                    <div class="events-near__card-wrap-visitor-ticket">
+                        <div class="events-near__card-visitor-block">
+                            <div class="wrap-img">
+                                <img src="./images/main/s2_EventsNear/check.svg" alt="check">
+                            </div>
+                            <p class="events-near__card-visitor">41 going</p>
+                        </div>
+                        <div class="events-near__card-ticket-block">
+                            <div class="wrap-img">
+                                <img src="./images/main/s2_EventsNear/ticket.svg" alt="ticket">
+                            </div>
+                            <p class="events-near__card-ticket">Free</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="events-near__card">
+                    <div class="wrap-img">
+                        <img src="./images/main/s2_EventsNear/event5.png" alt="event1">
+                    </div>
+                    <h3 class="events-near__card-title">AI Wednesdays - Meet
+                        and Greet!</h3>
+                    <p class="events-near__card-sphere">Technology (5 km)</p>
+                    <div class="events-near__card-date-block">
+                        <div class="wrap-img">
+                            <img src="./images/main/s2_EventsNear/calendar.svg" alt="calendar">
+                        </div>
+                        <time class="events-near__card-date" datetime="Wed, Mar 13 · 6:30 PM PDT">Wed, Mar 13 · 6:30 PM
+                            PDT</time>
+                    </div>
+                    <div class="events-near__card-wrap-visitor-ticket">
+                        <div class="events-near__card-visitor-block">
+                            <div class="wrap-img">
+                                <img src="./images/main/s2_EventsNear/check.svg" alt="check">
+                            </div>
+                            <p class="events-near__card-visitor">29 going</p>
+                        </div>
+                        <div class="events-near__card-ticket-block">
+                            <div class="wrap-img">
+                                <img src="./images/main/s2_EventsNear/ticket.svg" alt="ticket">
+                            </div>
+                            <p class="events-near__card-ticket">Free</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="events-near__card">
+                    <div class="wrap-img">
+                        <img src="./images/main/s2_EventsNear/event6.png" alt="event1">
+                    </div>
+                    <h3 class="events-near__card-title">ROS By-The-Bay March
+                        2024</h3>
+                    <p class="events-near__card-sphere">Social Activities</p>
+                    <div class="events-near__card-date-block">
+                        <div class="wrap-img">
+                            <img src="./images/main/s2_EventsNear/calendar.svg" alt="calendar">
+                        </div>
+                        <time class="events-near__card-date" datetime="Thu, Mar 21 · 6:00 PM PDT">Thu, Mar 21 · 6:00 PM
+                            PDT</time>
+                    </div>
+                    <div class="events-near__card-wrap-visitor-ticket">
+                        <div class="events-near__card-visitor-block">
+                            <div class="wrap-img">
+                                <img src="./images/main/s2_EventsNear/check.svg" alt="check">
+                            </div>
+                            <p class="events-near__card-visitor">51 going</p>
+                        </div>
+                        <div class="events-near__card-ticket-block">
+                            <div class="wrap-img">
+                                <img src="./images/main/s2_EventsNear/ticket.svg" alt="ticket">
+                            </div>
+                            <p class="events-near__card-ticket">Free</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="events-near__card">
+                    <div class="wrap-img">
+                        <img src="./images/main/s2_EventsNear/event7.png" alt="event1">
+                    </div>
+                    <h3 class="events-near__card-title">Free Christian Singles'
+                        Dinner</h3>
+                    <p class="events-near__card-sphere">Hobbies and Passions (10 km)</p>
+                    <div class="events-near__card-date-block">
+                        <div class="wrap-img">
+                            <img src="./images/main/s2_EventsNear/calendar.svg" alt="calendar">
+                        </div>
+                        <time class="events-near__card-date" datetime="Fri, Mar 29 · 6:00 PM PDT">Fri, Mar 29 · 6:00 PM
+                            PDT</time>
+                    </div>
+                    <div class="events-near__card-wrap-visitor-ticket">
+                        <div class="events-near__card-visitor-block">
+                            <div class="wrap-img">
+                                <img src="./images/main/s2_EventsNear/check.svg" alt="check">
+                            </div>
+                            <p class="events-near__card-visitor">11 going</p>
+                        </div>
+                        <div class="events-near__card-ticket-block">
+                            <div class="wrap-img">
+                                <img src="./images/main/s2_EventsNear/ticket.svg" alt="ticket">
+                            </div>
+                            <p class="events-near__card-ticket">Free</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="events-near__card">
+                    <div class="wrap-img">
+                        <img src="./images/main/s2_EventsNear/event8.png" alt="event1">
+                    </div>
+                    <h3 class="events-near__card-title">In-person: Deep Dive into
+                        RAG Architectures (Food
+                        served)</h3>
+                    <p class="events-near__card-sphere">Hobbies and Passions (50 km)</p>
+                    <div class="events-near__card-date-block">
+                        <div class="wrap-img">
+                            <img src="./images/main/s2_EventsNear/calendar.svg" alt="calendar">
+                        </div>
+                        <time class="events-near__card-date" datetime="Thu, Mar 14 · 5:00 PM PDT">Thu, Mar 14 · 5:00 PM
+                            PDT</time>
+                    </div>
+                    <div class="events-near__card-wrap-visitor-ticket">
+                        <div class="events-near__card-visitor-block">
+                            <div class="wrap-img">
+                                <img src="./images/main/s2_EventsNear/check.svg" alt="check">
+                            </div>
+                            <p class="events-near__card-visitor">16 going</p>
+                        </div>
+                        <div class="events-near__card-ticket-block">
+                            <div class="wrap-img">
+                                <img src="./images/main/s2_EventsNear/ticket.svg" alt="ticket">
+                            </div>
+                            <p class="events-near__card-ticket">Free</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section class="header-section">
+            <div class="header-section__header">
+                <div class="header-section__title-wrap">
+                    <h2 class="header-section__title">Upcoming online events</h2>
+                </div>
+                <a href="" class="header-section__link">See all events</a>
+            </div>
+        </section>
+
+        <section class="online_events">
 
         </section>
+
     </main>
 
-    <footer class="footer">уже готов</footer>
+    <!-- <footer class="footer">уже готов</footer> -->
 
     <script src="./script.js"></script>
 </body>
