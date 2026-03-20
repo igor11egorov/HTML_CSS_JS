@@ -4,3 +4,18 @@
   line-height: $line-height;
   color: $color;
 }
+
+@mixin grid($width, $gap) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($width, 1fr));
+  gap: $gap;
+  justify-items: center;
+}
+
+@mixin btn-green() {
+  padding: 8px 16px;
+  background: #00798a;
+  border-radius: 8px;
+  border: none;
+}
+

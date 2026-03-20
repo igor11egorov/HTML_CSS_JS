@@ -5,9 +5,98 @@
   font-family: "Roboto", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrap-img {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.container-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(272px, 1fr));
+  gap: 86px 36px;
+  justify-items: center;
+}
+.container-cards .card {
+  max-width: 272px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.container-cards .card-title {
+  padding-right: 16px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #212121;
+}
+.container-cards .card-sphere {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #707070;
+}
+.container-cards .card-date-block, .container-cards .card-visitor-block, .container-cards .card-ticket-block {
+  display: flex;
+  gap: 6px;
+}
+.container-cards .card-wrap-visitor-ticket {
+  display: flex;
+  gap: 16px;
+}
+.container-cards .card-date, .container-cards .card-visitor, .container-cards .card-ticket {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #212121;
+  text-transform: uppercase;
+}
+
+.container-mini-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+  gap: 16px;
+  justify-items: center;
+}
+.container-mini-cards .mini-card {
+  width: 135px;
+  padding: 16px 18px 22px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+  background: rgba(151, 202, 209, 0.0784313725);
+  border-radius: 8px;
+}
+.container-mini-cards .mini-card__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212121;
+}
+
+.container-cards-city {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
+  gap: 40px;
+  justify-items: center;
+}
+.container-cards-city .card-city {
+  max-width: 205px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.container-cards-city .card-city__name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #212121;
 }
 
 .header {
@@ -27,7 +116,6 @@
 }
 .header__search-menu {
   display: flex;
-  font-size: 16px;
 }
 .header__search-wrap {
   display: flex;
@@ -40,6 +128,9 @@
 }
 .header__search-input::placeholder {
   padding-left: 37px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
   color: #707070;
 }
 .header__search-icon-wrap {
@@ -56,7 +147,10 @@
 }
 .header__location-input::placeholder {
   padding-left: 17px;
-  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #212121;
 }
 .header__search-btn {
   display: flex;
@@ -89,54 +183,53 @@
 }
 .header__signup-btn {
   padding: 8px 16px;
-  align-self: center;
-  color: #ffffff;
   background: #00798a;
   border-radius: 8px;
   border: none;
+  align-self: center;
+  color: #ffffff;
 }
 
 .main {
   max-width: 1196px;
   margin: 0 auto;
 }
-.main .join-meetup {
+.main .people-platform {
   display: flex;
   gap: 50px;
   padding-top: 71px;
 }
-.main .join-meetup__left {
+.main .people-platform__info-block {
   width: 51%;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  color: #212121;
 }
-.main .join-meetup__title {
+.main .people-platform__title {
   font-weight: 700;
   font-size: 42px;
   line-height: 52px;
   color: #212121;
 }
-.main .join-meetup__text {
+.main .people-platform__text {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #212121;
 }
-.main .join-meetup__btn {
-  align-self: flex-start;
-  padding: 8px 16px;
+.main .people-platform__btn {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
   color: #ffffff;
+  padding: 8px 16px;
   background: #00798a;
   border-radius: 8px;
   border: none;
-}
-.main .join-meetup__right {
-  display: flex;
+  align-self: flex-start;
 }
 .main .header-section {
-  padding-top: 100px;
+  padding-top: 64px;
   padding-bottom: 24px;
 }
 .main .header-section__header {
@@ -186,43 +279,131 @@
   color: #00798a;
   text-decoration: none;
 }
-.main .events-near__container-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 86px 36px;
+.main .join-meetup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 90px;
+  padding: 20px 56px;
+  background: rgba(151, 202, 209, 0.0784313725);
+  border-radius: 8px;
 }
-.main .events-near__card {
+.main .join-meetup__info-block {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 16px;
+  padding-right: 50px;
 }
-.main .events-near__card-title {
-  padding-right: 16px;
+.main .join-meetup__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  color: #212121;
+}
+.main .join-meetup__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212121;
+}
+.main .join-meetup__btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  align-self: flex-start;
+  padding: 8px 67px;
+  background: #e32359;
+  border-radius: 8px;
+  border: none;
+}
+.main .popular-cities__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #707070;
+  margin-bottom: 28px;
+}
+.main .meetup-work__container-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 32px;
+  justify-items: center;
+  justify-items: normal;
+}
+.main .meetup-work__card {
+  background: rgba(151, 202, 209, 0.0784313725);
+  border-radius: 8px;
+  padding: 32px 0 24px 24px;
+  display: flex;
+  gap: 24px;
+}
+.main .meetup-work__icon {
+  align-items: flex-start;
+}
+.main .meetup-work__info-block {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.main .meetup-work__title {
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
   color: #212121;
 }
-.main .events-near__card-sphere {
+.main .meetup-work__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212121;
+}
+.main .meetup-work__link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00798a;
+}
+.main .friendships__container-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(376px, 1fr));
+  gap: 32px;
+  justify-items: center;
+}
+.main .friendships__card {
+  max-width: 376px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-bottom: 64px;
+}
+.main .friendships__text {
+  width: 75%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #707070;
+  margin-bottom: 28px;
+}
+.main .friendships__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #212121;
+  width: 75%;
+}
+.main .friendships__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
   color: #707070;
 }
-.main .events-near__card-date-block, .main .events-near__card-visitor-block, .main .events-near__card-ticket-block {
-  display: flex;
-  gap: 6px;
-}
-.main .events-near__card-wrap-visitor-ticket {
-  display: flex;
-  gap: 16px;
-}
-.main .events-near__card-date, .main .events-near__card-visitor, .main .events-near__card-ticket {
+.main .friendships__link {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #212121;
-  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00798a;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,6 @@
 @use './common' as *;
 @use './mixins' as *;
+@use './variables' as *;
 
 .header {
   max-width: 1512px;
@@ -20,7 +21,6 @@
 
   &__search-menu {
     display: flex;
-    font-size: 16px;
   }
 
   &__search-wrap {
@@ -36,7 +36,7 @@
 
   &__search-input::placeholder {
     padding-left: 37px;
-    color: #707070;
+    @include font(400, 16px, 100%, #707070);
   }
 
   &__search-icon-wrap {
@@ -55,7 +55,7 @@
 
   &__location-input::placeholder {
     padding-left: 17px;
-    color: #000000;
+    @include font(400, 16px, 100%, #212121);
   }
 
   &__search-btn {
@@ -93,30 +93,26 @@
   }
 
   &__signup-btn {
-    padding: 8px 16px;
+    @include btn-green();
     align-self: center;
     color: #ffffff;
-    background: #00798a;
-    border-radius: 8px;
-    border: none;
   }
 }
 
 .main {
   max-width: 1196px;
   margin: 0 auto;
-  // section1
-  .join-meetup {
+
+  .people-platform {
     display: flex;
     gap: 50px;
     padding-top: 71px;
 
-    &__left {
+    &__info-block {
       width: 51%;
       display: flex;
       flex-direction: column;
       gap: 24px;
-      color: #212121;
     }
 
     &__title {
@@ -128,24 +124,16 @@
     }
 
     &__btn {
+      @include font(400, 16px, 24px, #ffffff);
+      @include btn-green();
       align-self: flex-start;
-      padding: 8px 16px;
-      color: #ffffff;
-      background: #00798a;
-      border-radius: 8px;
-      border: none;
-    }
-
-    &__right {
-      display: flex;
     }
   }
 
-  // section2
   .header-section {
-    padding-top: 100px;
+    padding-top: 64px;
     padding-bottom: 24px;
-    
+
     &__header {
       display: flex;
       justify-content: space-between;
@@ -193,46 +181,113 @@
     }
   }
 
-  // section3
-  .events-near {
+  .join-meetup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+    padding: 20px 56px;
+    background: #97cad114;
+    border-radius: 8px;
+
+    &__info-block {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding-right: 50px;
+    }
+
+    &__title {
+      @include font(600, 28px, 36px, #212121);
+    }
+
+    &__text {
+      @include font(400, 16px, 24px, #212121);
+    }
+
+    &__btn {
+      @include font(500, 16px, 24px, #ffffff);
+      align-self: flex-start;
+      padding: 8px 67px;
+      background: #e32359;
+      border-radius: 8px;
+      border: none;
+    }
+  }
+
+  .popular-cities {
+    &__text {
+      @include font(400, 16px, 24px, #707070);
+      margin-bottom: 28px;
+    }
+  }
+
+  .meetup-work {
     &__container-cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 86px 36px;
+      @include grid(380px, 32px);
+      justify-items: normal;
     }
 
     &__card {
+      background: #97cad114;
+      border-radius: 8px;
+      padding: 32px 0 24px 24px;
+      display: flex;
+      gap: 24px;
+    }
+
+    &__icon {
+      align-items: flex-start;
+    }
+
+    &__info-block {
+      width: 65%;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 16px;
+    }
+    &__title {
+      @include font(600, 20px, 24px, #212121);
+    }
 
-      &-title {
-        padding-right: 16px;
-        @include font(600, 20px, 24px, #212121);
-      }
+    &__description {
+      @include font(400, 16px, 24px, #212121);
+    }
 
-      &-sphere {
-        @include font(500, 14px, 20px, #707070);
-      }
+    &__link {
+      @include font(500, 16px, 24px, #00798a);
+    }
+  }
 
-      &-date-block,
-      &-visitor-block,
-      &-ticket-block {
-        display: flex;
-        gap: 6px;
-      }
+  .friendships {
+    &__container-cards {
+      @include grid($width-friendships-card, 32px);
+    }
+    &__card {
+      max-width: $width-friendships-card;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      padding-bottom: 64px;
+    }
 
-      &-wrap-visitor-ticket {
-        display: flex;
-        gap: 16px;
-      }
+    &__text {
+      width: 75%;
+      @include font(400, 16px, 24px, #707070);
+      margin-bottom: 28px;
+    }
 
-      &-date,
-      &-visitor,
-      &-ticket {
-        @include font(400, 14px, 20px, #212121);
-        text-transform: uppercase;
-      }
+    &__title {
+      @include font(600, 18px, 28px, #212121);
+      width: 75%;
+    }
+
+    &__description {
+      @include font(400, 16px, 24px, #707070);
+    }
+
+    &__link {
+      @include font(400, 16px, 24px, #00798a);
     }
   }
 }

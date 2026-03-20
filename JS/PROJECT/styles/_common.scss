@@ -1,3 +1,6 @@
+@use './mixins' as *;
+@use './variables' as *;
+
 * {
   padding: 0;
   margin: 0;
@@ -5,7 +8,86 @@
   font-family: 'Roboto', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrap-img {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.container-cards {
+  @include grid($width-event-card, 86px 36px);
+
+  .card {
+    max-width: $width-event-card;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &-title {
+      padding-right: 16px;
+      @include font(600, 20px, 24px, #212121);
+    }
+
+    &-sphere {
+      @include font(500, 14px, 20px, #707070);
+    }
+
+    &-date-block,
+    &-visitor-block,
+    &-ticket-block {
+      display: flex;
+      gap: 6px;
+    }
+
+    &-wrap-visitor-ticket {
+      display: flex;
+      gap: 16px;
+    }
+
+    &-date,
+    &-visitor,
+    &-ticket {
+      @include font(400, 14px, 20px, #212121);
+      text-transform: uppercase;
+    }
+  }
+}
+
+.container-mini-cards {
+  @include grid($width-caterogy-card, 16px);
+
+  .mini-card {
+    width: $width-caterogy-card;
+    padding: 16px 18px 22px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+    background: #97cad114;
+    border-radius: 8px;
+
+    &__text {
+      @include font(500, 16px, 24px, #212121);
+    }
+  }
+}
+
+.container-cards-city {
+  @include grid($width-city-card, 40px);
+
+  .card-city {
+    max-width: $width-city-card;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    &__name {
+      @include font(600, 20px, 28px, #212121);
+    }
+  }
 }
