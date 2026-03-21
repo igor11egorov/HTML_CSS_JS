@@ -111,9 +111,6 @@ a {
   align-items: center;
   gap: 40px;
 }
-.header__logo-wrap {
-  display: flex;
-}
 .header__search-menu {
   display: flex;
 }
@@ -153,8 +150,6 @@ a {
   color: #212121;
 }
 .header__search-btn {
-  display: flex;
-  align-items: center;
   background: #f65858;
   border-radius: 0 8px 8px 0;
   border: none;
@@ -164,8 +159,10 @@ a {
   display: flex;
   align-items: center;
   gap: 22px;
+  font-weight: 500;
   font-size: 14px;
   line-height: 20px;
+  color: #212121;
 }
 .header__lang-btn {
   display: flex;
@@ -173,9 +170,6 @@ a {
   gap: 4px;
   border: none;
   background: transparent;
-}
-.header__lang-icon-wrap {
-  display: flex;
 }
 .header__login-btn {
   border: none;

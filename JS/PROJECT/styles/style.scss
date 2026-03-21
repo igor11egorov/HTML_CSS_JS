@@ -15,10 +15,6 @@
     gap: 40px;
   }
 
-  &__logo-wrap {
-    display: flex;
-  }
-
   &__search-menu {
     display: flex;
   }
@@ -59,8 +55,6 @@
   }
 
   &__search-btn {
-    display: flex;
-    align-items: center;
     background: #f65858;
     border-radius: 0 8px 8px 0;
     border: none;
@@ -71,8 +65,7 @@
     display: flex;
     align-items: center;
     gap: 22px;
-    font-size: 14px;
-    line-height: 20px;
+    @include font(500, 14px, 20px, #212121);
   }
 
   &__lang-btn {
@@ -81,10 +74,6 @@
     gap: 4px;
     border: none;
     background: transparent;
-  }
-
-  &__lang-icon-wrap {
-    display: flex;
   }
 
   &__login-btn {
