@@ -27,6 +27,12 @@ a {
     flex-direction: column;
     gap: 12px;
 
+    &__wrap-info-block{
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
     &-title {
       padding-right: 16px;
       @include font(600, 20px, 24px, #212121);
@@ -52,6 +58,8 @@ a {
     &-visitor,
     &-ticket {
       @include font(400, 14px, 20px, #212121);
+    }
+    &-date {
       text-transform: uppercase;
     }
   }

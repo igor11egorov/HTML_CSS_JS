@@ -9,6 +9,10 @@
   display: flex;
   justify-content: space-between;
 
+  &_tablet {
+    display: none;
+  }
+
   &__left {
     display: flex;
     align-items: center;
@@ -66,6 +70,7 @@
     align-items: center;
     gap: 22px;
     @include font(500, 14px, 20px, #212121);
+    white-space: nowrap;
   }
 
   &__lang-btn {
@@ -277,6 +282,267 @@
 
     &__link {
       @include font(400, 16px, 24px, #00798a);
+    }
+  }
+}
+
+.footer {
+  max-width: 1512px;
+  margin: 0 auto;
+  background: #212121;
+  padding: 24px 196px 40px 196px;
+
+  .footer-up {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 0 0 25px 0;
+    border-bottom: 1px solid #707070;
+
+    &__text {
+      @include font(600, 16px, 24px, #f6f7f8);
+    }
+
+    &__btn {
+      @include font(600, 16px, 24px, #ffffff);
+      padding: 10px 14px;
+      background: transparent;
+      border-radius: 6px;
+      border: 2px solid #ffffff;
+    }
+  }
+
+  .footer-center {
+    display: flex;
+    padding: 24px 0;
+
+    &__header {
+      @include font(400, 16px, 24px, #f6f7f8);
+    }
+
+    &__list {
+      @include font(400, 14px, 20px, #c5c4c4);
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    &__block {
+      width: calc(100% / 3);
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+  }
+
+  .footer-icons {
+    display: flex;
+    justify-content: space-between;
+
+    &__left_block {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    &__header {
+      @include font(400, 16px, 24px, #f6f7f8);
+    }
+
+    &__sozial-networks {
+      display: flex;
+      gap: 32px;
+      padding: 0 0 24px 0;
+    }
+
+    &__right-block {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+
+  .footer-down {
+    display: flex;
+    gap: 32px;
+    padding: 24px 0 0 0;
+
+    &__header {
+      @include font(400, 14px, 20px, #ffffff);
+    }
+
+    &__list {
+      @include font(400, 14px, 20px, #c5c4c4);
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .footer {
+    padding: 24px 14% 40px 14%;
+  }
+}
+
+@media (max-width: 1244px) {
+  .main {
+    margin: 0 24px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header {
+    display: none;
+
+    &_tablet {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 11px 0;
+    }
+
+    &__wrap-left-right {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 50px;
+    }
+
+    &__search-menu {
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .people-platform {
+    flex-direction: column;
+  }
+
+  .join-meetup {
+    flex-direction: column-reverse;
+  }
+
+  .footer-down__list,
+  .footer-icons__right-block {
+    display: none !important;
+  }
+}
+
+@media (max-width: 393px) {
+  .header {
+    &__wrap-left-right {
+      padding-right: 8px;
+    }
+    &__right {
+      gap: 18px;
+    }
+    &__lang-text,
+    &__login-btn,
+    &__signup-btn {
+      font-size: 12px;
+    }
+    &__search-input {
+      border-right: none;
+    }
+    &__location-input {
+      display: none;
+    }
+  }
+  .main {
+    .header-section {
+      padding-top: 24px;
+      padding-bottom: 12px;
+      &__header {
+        justify-content: space-between;
+      }
+      &__title-wrap {
+        gap: 8px;
+      }
+      &__title {
+        font-size: 20px;
+        white-space: nowrap;
+      }
+      &__location-input::placeholder {
+        font-size: 14px;
+      }
+      &__location-input {
+        width: 137px;
+      }
+      &__location-btn {
+        padding: 7px;
+      }
+      &__link {
+        width: 40px;
+        font-size: 12px;
+        line-height: 12px;
+      }
+    }
+
+    .people-platform {
+      padding-top: 30px;
+      gap: 24px;
+      &__info-block {
+        width: 100%;
+      }
+      &__title {
+        font-size: 25px;
+        line-height: 30px;
+      }
+      &__text {
+        font-size: 12px;
+      }
+      &__btn {
+        display: none;
+      }
+      &__img_mobile {
+        img {
+          width: 215px;
+        }
+      }
+    }
+  }
+
+  .container-cards {
+    .card {
+      flex-direction: row;
+      &__wrap-info-block {
+        gap: 0;
+      }
+      &__img_mobile {
+        img {
+          width: 95px;
+        }
+      }
+      &-title {
+        font-size: 10px;
+        line-height: 14px;
+      }
+      &-sphere,
+      &-date,
+      &-visitor {
+        font-size: 9px;
+        line-height: 14px;
+      }
+      &-icon,
+      &-ticket {
+        display: none;
+      }
+      &-date-block {
+        order: 1;
+      }
+      &-title {
+        order: 2;
+      }
+      &-sphere {
+        order: 3;
+      }
+      &-wrap-visitor-ticket {
+        order: 4;
+      }
     }
   }
 }
