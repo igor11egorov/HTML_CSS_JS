@@ -169,10 +169,6 @@ a {
   display: flex;
   align-items: center;
   gap: 22px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  color: #212121;
   white-space: nowrap;
 }
 .header__lang-btn {
@@ -181,10 +177,18 @@ a {
   gap: 4px;
   border: none;
   background: transparent;
+  font-weight: 500;
+  font-size: clamp(12px, 2vw, 14px);
+  line-height: 20px;
+  color: #212121;
 }
 .header__login-btn {
   border: none;
   background: transparent;
+  font-weight: 500;
+  font-size: clamp(12px, 2vw, 14px);
+  line-height: 20px;
+  color: #212121;
 }
 .header__signup-btn {
   padding: 8px 16px;
@@ -192,6 +196,9 @@ a {
   border-radius: 8px;
   border: none;
   align-self: center;
+  font-weight: 500;
+  font-size: clamp(12px, 2vw, 14px);
+  line-height: 20px;
   color: #ffffff;
 }
 
@@ -212,13 +219,13 @@ a {
 }
 .main .people-platform__title {
   font-weight: 700;
-  font-size: 42px;
-  line-height: 52px;
+  font-size: clamp(25px, 3vw, 42px);
+  line-height: clamp(30px, 3vw, 52px);
   color: #212121;
 }
 .main .people-platform__text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: clamp(12px, 3vw, 16px);
   line-height: 24px;
   color: #212121;
 }
@@ -556,13 +563,10 @@ a {
 }
 @media (max-width: 393px) {
   .header__wrap-left-right {
-    padding-right: 8px;
+    padding-right: 8px !important;
   }
   .header__right {
     gap: 18px;
-  }
-  .header__lang-text, .header__login-btn, .header__signup-btn {
-    font-size: 12px;
   }
   .header__search-input {
     border-right: none;
@@ -603,14 +607,7 @@ a {
     gap: 24px;
   }
   .main .people-platform__info-block {
-    width: 100%;
-  }
-  .main .people-platform__title {
-    font-size: 25px;
-    line-height: 30px;
-  }
-  .main .people-platform__text {
-    font-size: 12px;
+    width: 100% !important;
   }
   .main .people-platform__btn {
     display: none;
@@ -618,7 +615,106 @@ a {
   .main .people-platform__img_mobile img {
     width: 215px;
   }
+  .main .join-meetup {
+    margin-top: 30px;
+    padding: 10px 30px;
+    display: grid;
+    grid-template-areas: "title" "image" "text" "button";
+    gap: 10px;
+  }
+  .main .join-meetup__info-block {
+    display: contents;
+  }
+  .main .join-meetup__title {
+    grid-area: title;
+    font-size: 20px;
+  }
+  .main .join-meetup__img {
+    grid-area: image;
+  }
+  .main .join-meetup__img img {
+    width: 238px;
+  }
+  .main .join-meetup__text {
+    grid-area: text;
+    font-size: 12px;
+  }
+  .main .join-meetup__btn {
+    grid-area: button;
+    justify-self: center;
+  }
+  .main .popular-cities__text {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  .main .meetup-work__container-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+    gap: 12px;
+    justify-items: center;
+    justify-items: normal;
+  }
+  .main .meetup-work__card {
+    padding: 20px 0 15px 15px;
+    gap: 14px;
+  }
+  .main .meetup-work__icon img {
+    width: 25px;
+  }
+  .main .meetup-work__info-block {
+    gap: 9px;
+  }
+  .main .meetup-work__title {
+    font-size: 12px;
+  }
+  .main .meetup-work__description {
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .main .meetup-work__link {
+    font-size: 10px;
+  }
+  .main .friendships__container-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+    gap: 12px;
+    justify-items: center;
+  }
+  .main .friendships__card {
+    gap: 12px;
+    padding-bottom: 32px;
+  }
+  .main .friendships__img img {
+    width: 345px;
+  }
+  .main .friendships__text {
+    display: none;
+  }
+  .main .friendships__title {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .main .friendships__link, .main .friendships__description {
+    font-size: 12px;
+  }
+  .footer {
+    padding: 24px 16px 40px 16px;
+  }
+  .footer .footer-up {
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .footer .footer-center {
+    gap: 30px;
+  }
+  .container-cards {
+    gap: 20px;
+    justify-items: flex-start;
+  }
   .container-cards .card {
+    max-width: 100%;
+    border-top: 0.6px solid #d9d9d9;
+    padding-top: 9px;
     flex-direction: row;
   }
   .container-cards .card__wrap-info-block {
@@ -649,6 +745,18 @@ a {
   }
   .container-cards .card-wrap-visitor-ticket {
     order: 4;
+  }
+  .container-cards-city {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(153px, 1fr));
+    gap: 18px;
+    justify-items: center;
+  }
+  .container-cards-city .card-city__img img {
+    width: 153px;
+  }
+  .container-cards-city .card-city__name {
+    font-size: 15px;
   }
 }
 

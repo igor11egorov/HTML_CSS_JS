@@ -69,7 +69,6 @@
     display: flex;
     align-items: center;
     gap: 22px;
-    @include font(500, 14px, 20px, #212121);
     white-space: nowrap;
   }
 
@@ -79,17 +78,19 @@
     gap: 4px;
     border: none;
     background: transparent;
+    @include font(500, clamp(12px, 2vw, 14px), 20px, #212121);
   }
 
   &__login-btn {
     border: none;
     background: transparent;
+    @include font(500, clamp(12px, 2vw, 14px), 20px, #212121);
   }
 
   &__signup-btn {
     @include btn-green();
     align-self: center;
-    color: #ffffff;
+    @include font(500, clamp(12px, 2vw, 14px), 20px, #ffffff);
   }
 }
 
@@ -110,11 +111,16 @@
     }
 
     &__title {
-      @include font(700, 42px, 52px, #212121);
+      @include font(
+        700,
+        clamp(25px, 3vw, 42px),
+        clamp(30px, 3vw, 52px),
+        #212121
+      );
     }
 
     &__text {
-      @include font(400, 16px, 24px, #212121);
+      @include font(400, clamp(12px, 3vw, 16px), 24px, #212121);
     }
 
     &__btn {
@@ -435,16 +441,12 @@
 @media (max-width: 393px) {
   .header {
     &__wrap-left-right {
-      padding-right: 8px;
+      padding-right: 8px !important;
     }
     &__right {
       gap: 18px;
     }
-    &__lang-text,
-    &__login-btn,
-    &__signup-btn {
-      font-size: 12px;
-    }
+
     &__search-input {
       border-right: none;
     }
@@ -452,6 +454,7 @@
       display: none;
     }
   }
+
   .main {
     .header-section {
       padding-top: 24px;
@@ -481,19 +484,11 @@
         line-height: 12px;
       }
     }
-
     .people-platform {
       padding-top: 30px;
       gap: 24px;
       &__info-block {
-        width: 100%;
-      }
-      &__title {
-        font-size: 25px;
-        line-height: 30px;
-      }
-      &__text {
-        font-size: 12px;
+        width: 100% !important;
       }
       &__btn {
         display: none;
@@ -504,10 +499,118 @@
         }
       }
     }
+    .join-meetup {
+      margin-top: 30px;
+      padding: 10px 30px;
+      display: grid;
+      grid-template-areas:
+        'title'
+        'image'
+        'text'
+        'button';
+      gap: 10px;
+      &__info-block {
+        display: contents;
+      }
+      &__title {
+        grid-area: title;
+        font-size: 20px;
+      }
+      &__img {
+        grid-area: image;
+        img {
+          width: 238px;
+        }
+      }
+      &__text {
+        grid-area: text;
+        font-size: 12px;
+      }
+      &__btn {
+        grid-area: button;
+        justify-self: center;
+      }
+    }
+    .popular-cities {
+      &__text {
+        font-size: 12px;
+        margin-bottom: 12px;
+      }
+    }
+    .meetup-work {
+      &__container-cards {
+        @include grid(345px, 12px);
+        justify-items: normal;
+      }
+      &__card {
+        padding: 20px 0 15px 15px;
+        gap: 14px;
+      }
+      &__icon {
+        img {
+          width: 25px;
+        }
+      }
+      &__info-block {
+        gap: 9px;
+      }
+      &__title {
+        font-size: 12px;
+      }
+      &__description {
+        font-size: 10px;
+        line-height: 14px;
+      }
+      &__link {
+        font-size: 10px;
+      }
+    }
+    .friendships {
+      &__container-cards {
+        @include grid(345px, 12px);
+      }
+      &__card {
+        // max-width: $width-friendships-card;
+        gap: 12px;
+        padding-bottom: 32px;
+      }
+      &__img {
+        img {
+          width: 345px;
+        }
+      }
+      &__text {
+        display: none;
+      }
+      &__title {
+        font-size: 16px;
+        line-height: 26px;
+      }
+      &__link,
+      &__description {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .footer {
+    padding: 24px 16px 40px 16px;
+    .footer-up {
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .footer-center {
+      gap: 30px;
+    }
   }
 
   .container-cards {
+    gap: 20px;
+    justify-items: flex-start;
     .card {
+      max-width: 100%;
+      border-top: 0.6px solid #d9d9d9;
+      padding-top: 9px;
       flex-direction: row;
       &__wrap-info-block {
         gap: 0;
@@ -542,6 +645,20 @@
       }
       &-wrap-visitor-ticket {
         order: 4;
+      }
+    }
+  }
+
+  .container-cards-city {
+    @include grid(153px, 18px);
+    .card-city {
+      &__img {
+        img {
+          width: 153px;
+        }
+      }
+      &__name {
+        font-size: 15px;
       }
     }
   }
