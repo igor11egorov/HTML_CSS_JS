@@ -158,25 +158,14 @@ function renderFilter(events, key) {
   })
 }
 
-function getFilteredEvents() {
-  return eventsStore.filter((event) => {
-    const matchType = !filters.type || event.type === filters.type
-
-    const matchDistance =
-      !filters.distance || event.distance <= +filters.distance
-
-    const matchCategory =
-      !filters.category || event.category === filters.category
-
-    const matchDate =
-      !filters.date || event.date.toLocaleDateString() === filters.date
-
-    return matchType && matchDistance && matchCategory && matchDate
-  })
-}
-
 function applyFilters() {
-  const filteredEvents = getFilteredEvents()
+  const filteredEvents = eventsStore.filter(
+    (event) =>
+      (!filters.type || event.type === filters.type) &&
+      (!filters.distance || event.distance <= +filters.distance) &&
+      (!filters.category || event.category === filters.category) &&
+      (!filters.date || event.date.toLocaleDateString() === filters.date),
+  )
   renderEvents(filteredEvents)
 }
 
