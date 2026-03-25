@@ -443,14 +443,15 @@ a {
   align-self: flex-start;
 }
 .main .events-NY__filter-block {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 18px;
 }
 .main .events-NY {
   /* Кастомизация через CSS */
 }
 .main .events-NY .choices {
-  width: 175px;
+  width: 165px;
 }
 .main .events-NY .choices__inner {
   font-weight: 500;
@@ -516,16 +517,17 @@ a {
   max-width: 100%;
   border-top: 1px solid #d9d9d9;
   padding-top: 16px;
-  flex-direction: row;
+  display: flex;
+  gap: 12px;
 }
 .main .events-NY__list-events .card__wrap-info-block {
-  gap: 4px;
+  display: flex;
+  flex-direction: column;
 }
 .main .events-NY__list-events .card__wrap-img {
   position: relative;
-}
-.main .events-NY__list-events .card__img {
   width: 160px;
+  height: 90px;
 }
 .main .events-NY__list-events .card__online-event {
   position: absolute;
@@ -846,6 +848,48 @@ a {
   }
   .main .friendships__link, .main .friendships__description {
     font-size: 12px;
+  }
+  .main .events-NY {
+    padding: 10px 0 60px 0;
+  }
+  .main .events-NY__left-block {
+    display: none;
+  }
+  .main .events-NY__title {
+    font-size: 25px;
+  }
+  .main .events-NY__filter-block {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .main .events-NY__list-events {
+    padding-top: 20px;
+  }
+  .main .events-NY__list-events .card__wrap-img {
+    position: relative;
+    width: 98px;
+    height: 55px;
+  }
+  .main .events-NY__list-events .card__img {
+    width: 98px;
+  }
+  .main .events-NY__list-events .card__online-event {
+    gap: 4px;
+    padding: 0 4px;
+  }
+  .main .events-NY__list-events .card__text-online-event {
+    font-size: 7px;
+  }
+  .main .events-NY__list-events .card__icon-online-event {
+    width: 10px;
+  }
+  .main .events-NY__list-events .card-title {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .main .events-NY__list-events .card-date, .main .events-NY__list-events .card-sphere, .main .events-NY__list-events .card-visitor {
+    font-size: 9px;
+    line-height: 13px;
   }
   .footer {
     padding: 24px 16px 40px 16px;
