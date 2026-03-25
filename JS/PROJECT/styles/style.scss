@@ -382,6 +382,10 @@
           width: 160px;
           height: 90px;
         }
+        &__img {
+          width: 160px;
+          height: 90px;
+        }
         &__online-event {
           position: absolute;
           top: 8px;
@@ -731,8 +735,9 @@
             width: 98px;
             height: 55px;
           }
-          &__img{
+          &__img {
             width: 98px;
+            height: 55px;
           }
           &__online-event {
             gap: 4px;

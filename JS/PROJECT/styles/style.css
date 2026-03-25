@@ -529,6 +529,10 @@ a {
   width: 160px;
   height: 90px;
 }
+.main .events-NY__list-events .card__img {
+  width: 160px;
+  height: 90px;
+}
 .main .events-NY__list-events .card__online-event {
   position: absolute;
   top: 8px;
@@ -872,6 +876,7 @@ a {
   }
   .main .events-NY__list-events .card__img {
     width: 98px;
+    height: 55px;
   }
   .main .events-NY__list-events .card__online-event {
     gap: 4px;

@@ -84,7 +84,7 @@
                 <h1 class="events-NY__title">Events near New York, NY</h1>
                 <a href="./index.html" class="events-NY__link">Events</a>
                 <div class="events-NY__filter-block">
-                    <div>
+                    <!-- <div>
                         <select class="type">
                             <option value="">Any type</option>
                             <option value="1">Опция 1</option>
@@ -115,10 +115,10 @@
                             <option value="2">Опция 2 с длинным текстом</option>
                             <option value="3" disabled>Опция 3 (недоступна)</option>
                         </select>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="events-NY__list-events">
-                    <div class="card">
+                    <!-- <div class="card">
                         <div class="wrap-img card__wrap-img">
                             <img class="card__img" src="./images/page2/example.png" alt="event1">
                             <div class="card__online-event">
@@ -151,7 +151,7 @@
                             <p class="card-sphere">Business (5 km)</p>
                             <p class="card-visitor">1 going</p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="events-NY__left-block">
@@ -257,36 +257,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-    <script>
-        new Choices('.type', {
-            searchEnabled: true,
-            searchPlaceholderValue: 'Поиск...',
-            itemSelectText: '',
-            shouldSort: true,
-            position: 'auto'
-        });
-        new Choices('.distance', {
-            searchEnabled: true,
-            searchPlaceholderValue: 'Поиск...',
-            itemSelectText: '',
-            shouldSort: true,
-            position: 'auto'
-        });
-        new Choices('.category', {
-            searchEnabled: true,
-            searchPlaceholderValue: 'Поиск...',
-            itemSelectText: '',
-            shouldSort: true,
-            position: 'auto'
-        });
-        new Choices('.date', {
-            searchEnabled: true,
-            searchPlaceholderValue: 'Поиск...',
-            itemSelectText: '',
-            shouldSort: true,
-            position: 'auto'
-        });
-    </script>
     <script src="./script.js"></script>
 </body>
 
