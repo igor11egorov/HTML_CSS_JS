@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+    <title>My study Project</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__left">
+            <div class="wrap-img">
+                <img src="./images/header/logo.svg" alt="logo-meetup">
+            </div>
+            <div class="header__search-menu">
+                <div class="header__search-wrap">
+                    <input class="header__search-input" type="text"
+                           placeholder="Search events">
+                    <div class="header__search-icon-wrap">
+                        <img src="./images/header/search-gray.svg" alt="search">
+                    </div>
+                </div>
+                <input class="header__location-input" type="text" placeholder="Mountain View, CA">
+                <button class="header__search-btn wrap-img">
+                    <img src="./images/header/search-white.svg" alt="search">
+                </button>
+            </div>
+        </div>
+        <div class="header__right">
+            <button class="header__lang-btn">
+                <div class="wrap-img">
+                    <img src="./images/header/globus.svg" alt="globus" class="header__lang-icon">
+                </div>
+                <span class="header__lang-text">English</span>
+            </button>
+            <button class="header__login-btn">Log in</button>
+            <button class="header__signup-btn">Sign up</button>
+        </div>
+    </header>
+    <!-- tablet -->
+    <header class="header header_tablet">
+        <div class="header__wrap-left-right">
+            <div class="header__left">
+                <div class="wrap-img">
+                    <img src="./images/header/logo.svg" alt="logo-meetup">
+                </div>
+            </div>
+            <div class="header__right">
+                <button class="header__lang-btn">
+                    <div class="wrap-img">
+                        <img src="./images/header/globus.svg" alt="globus" class="header__lang-icon">
+                    </div>
+                    <span class="header__lang-text">English</span>
+                </button>
+                <button class="header__login-btn">Log in</button>
+                <button class="header__signup-btn">Sign up</button>
+            </div>
+        </div>
+        <div class="header__search-menu">
+            <div class="header__search-wrap">
+                <input class="header__search-input" type="text"
+                       placeholder="Search events">
+                <div class="header__search-icon-wrap">
+                    <img src="./images/header/search-gray.svg" alt="search">
+                </div>
+            </div>
+            <input class="header__location-input" type="text" placeholder="Mountain View, CA">
+            <button class="header__search-btn wrap-img">
+                <img src="./images/header/search-white.svg" alt="search">
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="events-NY">
+            <div class="events-NY__right-block">
+                <h1 class="events-NY__title">Events near New York, NY</h1>
+                <a href="./index.html" class="events-NY__link">Events</a>
+                <div class="events-NY__filter-block">
+                    <div>
+                        <select class="type">
+                            <option value="">Any type</option>
+                            <option value="1">Опция 1</option>
+                            <option value="2">Опция 2 с длинным текстом</option>
+                            <option value="3" disabled>Опция 3 (недоступна)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="distance">
+                            <option value="">Any distance</option>
+                            <option value="1">Опция 1</option>
+                            <option value="2">Опция 2 с длинным текстом</option>
+                            <option value="3" disabled>Опция 3 (недоступна)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="category">
+                            <option value="">Any category</option>
+                            <option value="1">Опция 1</option>
+                            <option value="2">Опция 2 с длинным текстом</option>
+                            <option value="3" disabled>Опция 3 (недоступна)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="date">
+                            <option value="">Any date</option>
+                            <option value="1">Опция 1</option>
+                            <option value="2">Опция 2 с длинным текстом</option>
+                            <option value="3" disabled>Опция 3 (недоступна)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="container-cards events-NY__list-events">
+                    <div class="card">
+                        <div class="wrap-img card__wrap-img">
+                            <img class="card_img" src="./images/page2/example.png" alt="event1">
+                            <div class="card__online-event">
+                                <img class="wrap-img card__icon-online-event" src="./images/page2/online.svg" alt="">
+                                <span class="card__text-online-event">Online Event</span>
+                            </div>
+                        </div>
+                        <div class="card__wrap-info-block">
+                            <time class="card-date" datetime="Mon, Mar 18 · 7:00 PM PDT">Mon, Mar 18 · 7:00 PM
+                                PDT</time>
+                            <h3 class="card-title">Day Trading Idea and
+                                Strategy</h3>
+                            <p class="card-sphere">Business (5 km)</p>
+                            <p class="card-visitor">1 going</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="wrap-img card__wrap-img">
+                            <img class="card_img" src="./images/page2/example.png" alt="event1">
+                            <div class="card__online-event">
+                                <img class="wrap-img card__icon-online-event" src="./images/page2/online.svg" alt="">
+                                <span class="card__text-online-event">Online Event</span>
+                            </div>
+                        </div>
+                        <div class="card__wrap-info-block">
+                            <time class="card-date" datetime="Mon, Mar 18 · 7:00 PM PDT">Mon, Mar 18 · 7:00 PM
+                                PDT</time>
+                            <h3 class="card-title">Day Trading Idea and
+                                Strategy</h3>
+                            <p class="card-sphere">Business (5 km)</p>
+                            <p class="card-visitor">1 going</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="events-NY__left-block">
+                <span class="events-NY__description-map">Find events near</span>
+                <h3 class="events-NY__name-map">New York, NY</h3>
+                <div class="wrap-img events-NY__map">
+                    <div class="events-NY__wrap-cross-map">
+                        <img class="wrap-img events-NY__cross-map" src="./images/page2/cross.svg" alt="">
+                    </div>
+                    <img src="./images/page2/map.png" alt="">
+                    <button class="events-NY__btn-map">
+                        <span class="events-NY__text-btn-map">Browse in map</span>
+                        <div class="wrap-img">
+                            <img src="./images/page2/expand.svg" alt="">
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-up">
+            <p class="footer-up__text">Create your own Meetup group.</p>
+            <button class="footer-up__btn">Get Started</button>
+        </div>
+        <div class="footer-center">
+            <div class="footer-center__block">
+                <h3 class="footer-center__header">Your Account</h3>
+                <ul class="footer-center__list">
+                    <li>Sign up</li>
+                    <li>Log in</li>
+                    <li>Help</li>
+                    <li>Become an Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-center__block">
+                <h3 class="footer-center__header">Discover</h3>
+                <ul class="footer-center__list">
+                    <li>Groups</li>
+                    <li>Calendar</li>
+                    <li>Topics</li>
+                    <li>Cities</li>
+                    <li>Online Events</li>
+                    <li>Local Guides</li>
+                    <li>Make Friends</li>
+                </ul>
+            </div>
+            <div class="footer-center__block">
+                <h3 class="footer-center__header">Meetup</h3>
+                <ul class="footer-center__list">
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Meetup Pro</li>
+                    <li>Careers</li>
+                    <li>Apps</li>
+                    <li>Podcast</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-icons">
+            <div class="footer-icons__left-block">
+                <h3 class="footer-icons__header">Follow us</h3>
+                <div class="footer-icons__sozial-networks">
+                    <a href="#" target="_blank">
+                        <img src="./images/footer/Facebook.svg" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="./images/footer/Twitter.svg" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="./images/footer/YouTube.svg" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="./images/footer/Instagram .svg" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="./images/footer/TikTok.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-icons__right-block">
+                <a href="#" target="_blank">
+                    <img src="./images/footer/GooglePlay.png" alt="">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="./images/footer/AppStore.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="footer-down">
+            <h3 class="footer-down__header">© 2024 Meetup</h3>
+            <ul class="footer-down__list">
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+                <li>Do Not Sell or Share My Personal Data</li>
+                <li>Cookie Policy</li>
+                <li>Help</li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script>
+        new Choices('.type', {
+            searchEnabled: true,
+            searchPlaceholderValue: 'Поиск...',
+            itemSelectText: '',
+            shouldSort: true,
+            position: 'auto'
+        });
+        new Choices('.distance', {
+            searchEnabled: true,
+            searchPlaceholderValue: 'Поиск...',
+            itemSelectText: '',
+            shouldSort: true,
+            position: 'auto'
+        });
+        new Choices('.category', {
+            searchEnabled: true,
+            searchPlaceholderValue: 'Поиск...',
+            itemSelectText: '',
+            shouldSort: true,
+            position: 'auto'
+        });
+        new Choices('.date', {
+            searchEnabled: true,
+            searchPlaceholderValue: 'Поиск...',
+            itemSelectText: '',
+            shouldSort: true,
+            position: 'auto'
+        });
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

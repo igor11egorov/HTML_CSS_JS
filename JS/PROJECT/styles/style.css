@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -416,6 +417,155 @@ a {
   font-size: 16px;
   line-height: 24px;
   color: #00798a;
+}
+.main .events-NY {
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.main .events-NY__right-block {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.main .events-NY__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  color: #000000;
+}
+.main .events-NY__link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  color: #00798a;
+  border-bottom: 4px solid #00798a;
+  align-self: flex-start;
+}
+.main .events-NY__filter-block {
+  display: flex;
+  gap: 18px;
+}
+.main .events-NY {
+  /* Кастомизация через CSS */
+}
+.main .events-NY .choices {
+  width: 175px;
+}
+.main .events-NY .choices__inner {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  color: #212121;
+  background: #f6f7f8;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+}
+.main .events-NY .choices__placeholder {
+  opacity: 1;
+}
+.main .events-NY .choices[data-type*=select-one] .choices__inner {
+  padding-bottom: var(--choices-inner-one-padding, 12px);
+}
+.main .events-NY__description-map {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #212121;
+}
+.main .events-NY__name-map {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #212121;
+  margin-bottom: 14px;
+}
+.main .events-NY__map {
+  position: relative;
+}
+.main .events-NY__wrap-cross-map {
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  background: #ffffff;
+}
+.main .events-NY__btn-map {
+  position: absolute;
+  border-radius: 8px;
+  border: 2px solid #00798a;
+  padding: 12px 24px;
+  background: #ffffff;
+  display: flex;
+  gap: 12px;
+}
+.main .events-NY__text-btn-map {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #00798a;
+}
+.main .events-NY__list-events {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-items: flex-start;
+}
+.main .events-NY__list-events .card {
+  max-width: 100%;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 16px;
+  flex-direction: row;
+}
+.main .events-NY__list-events .card__wrap-info-block {
+  gap: 4px;
+}
+.main .events-NY__list-events .card__wrap-img {
+  position: relative;
+}
+.main .events-NY__list-events .card__img {
+  width: 160px;
+}
+.main .events-NY__list-events .card__online-event {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  border-radius: 4px;
+  background: #ffffff;
+  display: flex;
+  gap: 4px;
+  padding: 2px 8px 2px 4px;
+}
+.main .events-NY__list-events .card__text-online-event {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #707070;
+}
+.main .events-NY__list-events .card-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212121;
+}
+.main .events-NY__list-events .card-sphere {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #707070;
+}
+.main .events-NY__list-events .card-date {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7c6f50;
+}
+.main .events-NY__list-events .card-visitor {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #707070;
 }
 
 .footer {
