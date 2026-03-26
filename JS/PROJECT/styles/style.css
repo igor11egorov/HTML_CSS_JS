@@ -543,6 +543,9 @@ a {
   gap: 4px;
   padding: 2px 8px 2px 4px;
 }
+.main .events-NY__list-events .card__online-event_mobile {
+  display: none;
+}
 .main .events-NY__list-events .card__text-online-event {
   font-weight: 500;
   font-size: 12px;
@@ -568,6 +571,7 @@ a {
   color: #7c6f50;
 }
 .main .events-NY__list-events .card-visitor {
+  padding-top: 28px;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -852,6 +856,7 @@ a {
   }
   .main .friendships__link, .main .friendships__description {
     font-size: 12px;
+    max-width: 75%;
   }
   .main .events-NY {
     padding: 10px 0 60px 0;
@@ -879,8 +884,11 @@ a {
     height: 55px;
   }
   .main .events-NY__list-events .card__online-event {
+    display: none;
+  }
+  .main .events-NY__list-events .card__online-event_mobile {
+    display: flex;
     gap: 4px;
-    padding: 0 4px;
   }
   .main .events-NY__list-events .card__text-online-event {
     font-size: 7px;
@@ -895,6 +903,9 @@ a {
   .main .events-NY__list-events .card-date, .main .events-NY__list-events .card-sphere, .main .events-NY__list-events .card-visitor {
     font-size: 9px;
     line-height: 13px;
+  }
+  .main .events-NY__list-events .card-visitor {
+    padding-top: 0;
   }
   .footer {
     padding: 24px 16px 40px 16px;
