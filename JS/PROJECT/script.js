@@ -143,6 +143,8 @@ function renderFilter(events, key) {
       if (key === 'distance') return a - b
     })
     .map((item) => {
+      if (key === 'distance')
+        return `<option value="${item}">${item} km</option>`
       return `<option value="${item}">${item}</option>`
     })
     .join('')
@@ -173,7 +175,8 @@ function applyFilters() {
     (event) =>
       (!filters.type || event.type === filters.type) &&
       (!filters.distance ||
-        (event.distance <= +filters.distance || event.type === 'online')) &&
+        event.distance <= +filters.distance ||
+        event.type === 'online') &&
       (!filters.category || event.category === filters.category) &&
       (!filters.date || event.date.toLocaleDateString() === filters.date),
   )
