@@ -108,18 +108,18 @@ function renderEvents(events) {
                 ${date.toUTCString()}
               </time>
               <h3 class="card-title">${title}</h3>
-              <p class="card-sphere">${category} (${distance} km)</p>
+              <p class="card-sphere">${category} ${type === 'online' ? '' : `(${distance} km)`}</p>
               ${attendees ? `<p class="card-visitor">${attendees} going</p>` : ''}
                ${
-                type === 'online'
-                  ? `
+                 type === 'online'
+                   ? `
                     <div class="card__online-event_mobile">
                       <img class="wrap-img card__icon-online-event" src="./images/page2/online.svg" alt="">
                       <span class="card__text-online-event">Online Event</span>
                     </div>
                   `
-                  : ''
-              }
+                   : ''
+               }
             </div>
           </div>
         `,
@@ -172,7 +172,8 @@ function applyFilters() {
   const filteredEvents = eventsStore.filter(
     (event) =>
       (!filters.type || event.type === filters.type) &&
-      (!filters.distance || event.distance <= +filters.distance) &&
+      (!filters.distance ||
+        (event.distance <= +filters.distance || event.type === 'online')) &&
       (!filters.category || event.category === filters.category) &&
       (!filters.date || event.date.toLocaleDateString() === filters.date),
   )
